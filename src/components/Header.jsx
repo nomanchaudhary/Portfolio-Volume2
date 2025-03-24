@@ -1,8 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaGithub } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa6";
 import Logo from "./Logo";
+
+const socialLinks = [
+  { icon: FaGithub, link: "https://github.com/nomanchaudhary" },
+  {
+    icon: FaLinkedin,
+    link: "https://www.linkedin.com/in/muhammad-noman-669656242/",
+  },
+  { icon: FaInstagram, link: "https://instagram.com/nomanchaudhary00" },
+];
 
 function Header() {
   return (
@@ -19,8 +28,17 @@ function Header() {
 
       <nav>
         <div className="flex gap-x-8 font-2xl">
-          <FaGithub size={25} />
-          <FaLinkedin size={25} />
+          {socialLinks.map(({ icon: Icon, link }, index) => (
+            <motion.a
+              key={index}
+              target="_blank"
+              href={link}
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Icon size={25} />
+            </motion.a>
+          ))}
         </div>
       </nav>
     </header>
