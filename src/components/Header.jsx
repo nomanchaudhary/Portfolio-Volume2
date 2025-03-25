@@ -8,7 +8,7 @@ const socialLinks = [
   { icon: FaGithub, link: "https://github.com/nomanchaudhary" },
   {
     icon: FaLinkedin,
-    link: "https://www.linkedin.com/in/muhammad-noman-669656242/",
+    link: "https://www.linkedin.com/in/nomanchaudhary00/",
   },
   { icon: FaInstagram, link: "https://instagram.com/nomanchaudhary00" },
 ];
