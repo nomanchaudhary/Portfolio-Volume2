@@ -7,6 +7,7 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
+import Skills from "../components/Skills";
 
 function About() {
   const AnimatedNumbers = ({ value }) => {
@@ -93,10 +94,11 @@ function About() {
             <span className="text-6xl font-bold font-montserrat inline-block">
             <AnimatedNumbers value={1}/>+
             </span>
-            <h1 className="text-lg font-medium font-montserrat">Experience</h1>
+            <h1 className="text-lg font-medium font-montserrat">Years Experience</h1>
           </div>
         </div>
       </div>
+      <Skills/>
     </main>
   );
 }
