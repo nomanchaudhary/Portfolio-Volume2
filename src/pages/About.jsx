@@ -8,6 +8,8 @@ import {
   useSpring,
 } from "framer-motion";
 import Skills from "../components/Skills";
+import Experience from "../components/Experience";
+import Education from "../components/Education";
 
 function About() {
   const AnimatedNumbers = ({ value }) => {
@@ -99,6 +101,8 @@ function About() {
         </div>
       </div>
       <Skills/>
+      <Experience/>
+      <Education/>
     </main>
   );
 }

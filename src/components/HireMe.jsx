@@ -18,7 +18,7 @@ function HireMe() {
             cx="50"
             cy="50"
             r="24"
-            stroke="red"
+            stroke="#ff8904"
             strokeWidth="3"
             fill="transparent"
             strokeDasharray="251.2"

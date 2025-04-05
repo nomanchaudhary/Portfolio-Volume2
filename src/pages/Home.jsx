@@ -32,7 +32,7 @@ function Home() {
               text="Turning vision into reality with code and design."
               className="font-bold text-left"
             />
-            <p className="py-4 text-base hover:bg-yellow-400 cursor-pointer font-medium font-montserrat">
+            <p className="py-4 text-base cursor-pointer font-medium font-montserrat">
               As a skilled full-stack developer, I am dedicated to turning ideas
               into innovative web applications. Explore my latest projects and
               articles, showcasing my expertise in React.js and web development.

@@ -16,8 +16,8 @@ function Skills() {
     { img: Css, title: "CSS" },
     { img: Javascript, title: "JavaScript" },
     { img: Reacticon, title: "React JS" },
-    { img: Redux, title: "Tailwind CSS" },
-    { img: Tailwind, title: "Redux Toolkit" },
+    { img: Tailwind, title: "Tailwind CSS" },
+    { img: Redux, title: "Redux Toolkit" },
     { img: Framer, title: "Framer Motion" },
     { img: Github, title: "GitHub" },
 
