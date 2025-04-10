@@ -66,8 +66,8 @@ function About() {
             the opportunity to bring my skills and passion to your next project.
           </p>
         </div>
-        <div className="col-span-3 h-max relative border-2 border-solid bg-white rounded-2xl p-8 mt-10">
-          <div className="absolute w-[102%] h-[103%] top-0 -right-3 -z-10 rounded-2xl bg-black"></div>
+        <div className="col-span-3 h-max relative border-2 border-solid bg-white rounded-2xl rounded-br-2xl p-8 mt-10">
+          <div className="absolute w-[102%] h-[103%] top-0 -right-3 -z-10 rounded-[2rem] rounded-br-2xl bg-black"></div>
           <img
             src={profilePic}
             alt="Noman Chaudhary"

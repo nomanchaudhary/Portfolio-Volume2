@@ -20,14 +20,14 @@ function Home() {
     <Fragment>
       <main className="w-full flex items-center min-h-screen px-32">
         <div className="w-full flex items-center justify-between gap-x-10">
-          <div className="w-1/2 py-10">
+          <div className="w-1/2 py-10 sm:hidden  lg:block">
             <img
               src={profilePic}
               alt="Noman Chaudhary"
               className="w-full h-auto"
             />
           </div>
-          <div className="w-1/2 flex flex-col items-center justify-center self-center font-montserrat">
+          <div className="w-1/2 flex flex-col sm:mx-auto items-center justify-center self-center font-montserrat">
             <AnimatedText
               text="Turning vision into reality with code and design."
               className="font-bold text-left"
