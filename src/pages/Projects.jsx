@@ -4,44 +4,39 @@ import { Link } from "react-router-dom";
 import project1 from "../assets/Portfolio Volume1.png";
 import project2 from "../assets/Random Password Generator.png";
 import project3 from "../assets/Todo APP.png";
-import gitimage from "../assets/Github.png";
+import { FaGithub } from "react-icons/fa";
 
 const FeaturedProject = ({ type, img, title, summary, link, github }) => {
   return (
-    <article className="w-full flex flex-col md:flex-row justify-between items-center rounded-3xl rounded-br-2xl border border-solid bg-white shadow-2xl p-4 md:p-6 relative mt-10 md:mt-20">
-      <div className="absolute w-[101%] h-[102%] top-0 -right-3 -z-10 rounded-[2.5rem] rounded-br-3xl bg-black"></div>
+    <article className="w-full flex flex-col lg:flex-row justify-between items-center rounded-3xl border border-solid bg-white p-4 sm:p-6 relative mt-10 sm:mt-16 dark:bg-black dark:text-white shadow-[10px_10px_0px_0px_rgba(0,_0,_0,_1)] dark:shadow-[10px_10px_0px_0px_rgba(255,_255,_255,_1)]">
       <Link
         to={link}
         target="_blank"
-        className="w-full md:w-1/2 cursor-pointer rounded-lg mb-4 md:mb-0"
+        className="w-full lg:w-1/2 cursor-pointer rounded-lg mb-4 lg:mb-0"
       >
         <img src={img} alt={title} className="w-full h-auto rounded-xl" />
       </Link>
 
-      <div className="w-full md:w-1/2 flex flex-col items-start justify-between md:pl-6">
-        <span className="text-xl sm:text-2xl my-2 w-full text-left font-medium font-montserrat text-orange-500">
+      <div className="w-full lg:w-1/2 flex flex-col items-start justify-between lg:pl-6  dark:bg-black dark:text-white">
+        <span className="text-lg sm:text-xl md:text-2xl my-2 w-full text-left font-medium font-montserrat text-orange-500 ">
           {type}
         </span>
         <Link to={link} target="_blank">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-montserrat hover:underline underline-offset-2">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold font-montserrat hover:underline underline-offset-2">
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-black text-sm sm:text-base">
+        <p className="my-2 font-medium text-black text-sm sm:text-base dark:text-white">
           {summary}
         </p>
         <div className="w-full flex items-center mt-4">
           <Link to={github} target="_blank">
-            <img
-              src={gitimage}
-              alt="Github"
-              className="w-8 h-8 sm:w-10 sm:h-10"
-            />
+            <FaGithub size={50}/>
           </Link>
           <Link
             to={link}
             target="_blank"
-            className="ml-4 text-sm sm:text-md font-semibold font-montserrat p-2 px-3 bg-black text-white rounded-lg"
+            className="ml-4 text-xs sm:text-sm md:text-md font-semibold font-montserrat p-2 px-3 bg-black text-white rounded-lg dark:bg-white dark:text-black"
           >
             Visit Project
           </Link>
@@ -53,8 +48,8 @@ const FeaturedProject = ({ type, img, title, summary, link, github }) => {
 
 const Project1 = ({ type, img, title, summary, link, github }) => {
   return (
-    <article className="w-full flex flex-col justify-between items-center rounded-3xl rounded-br-2xl border border-solid bg-white shadow-2xl p-4 md:p-6 relative mt-10 md:mt-20">
-      <div className="absolute w-[101%] h-[102%] top-1 -right-3 -z-10 rounded-[2rem] rounded-br-3xl bg-black"></div>
+    <article className="w-full flex flex-col justify-between items-center rounded-3xl border border-solid bg-white p-4 sm:p-6 relative mt-10 sm:mt-16 dark:bg-black dark:text-white shadow-[10px_10px_0px_0px_rgba(0,_0,_0,_1)] dark:shadow-[10px_10px_0px_0px_rgba(255,_255,_255,_1)]">
+      
       <Link
         to={link}
         target="_blank"
@@ -63,12 +58,12 @@ const Project1 = ({ type, img, title, summary, link, github }) => {
         <img src={img} alt={title} className="w-full h-auto rounded-2xl" />
       </Link>
 
-      <div className="w-full flex flex-col items-start justify-between mt-4 pl-0 md:pl-6">
-        <span className="text-xl sm:text-2xl my-2 w-full text-left font-medium font-montserrat text-orange-500">
+      <div className="w-full flex flex-col items-start justify-between mt-4">
+        <span className="text-lg sm:text-xl md:text-2xl my-2 w-full text-left font-medium font-montserrat text-orange-500">
           {type}
         </span>
         <Link to={link} target="_blank">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-montserrat">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold font-montserrat">
             {title}
           </h2>
         </Link>
@@ -76,17 +71,13 @@ const Project1 = ({ type, img, title, summary, link, github }) => {
           {summary}
         </p>
         <div className="w-full flex justify-between items-center mt-4">
-          <Link to={github} target="_blank">
-            <img
-              src={gitimage}
-              alt="Github"
-              className="w-8 h-8 sm:w-10 sm:h-10"
-            />
+        <Link to={github} target="_blank">
+            <FaGithub size={50}/>
           </Link>
           <Link
             to={link}
             target="_blank"
-            className="ml-4 text-sm sm:text-md font-semibold font-montserrat p-2 px-3 bg-black text-white rounded-lg"
+            className="ml-4 text-xs sm:text-sm md:text-md font-semibold font-montserrat p-2 px-3 bg-black text-white rounded-lg dark:bg-white dark:text-black"
           >
             Visit Project
           </Link>
@@ -98,14 +89,14 @@ const Project1 = ({ type, img, title, summary, link, github }) => {
 
 function Projects() {
   return (
-    <main className="w-full flex flex-col justify-center items-center">
-      <div className="px-4 sm:px-10 md:px-20 lg:px-32 mt-10 md:mt-20 text-center">
+    <main className="w-full flex flex-col justify-center items-center dark:bg-black dark:text-white">
+      <div className="px-4 sm:px-10 md:px-20 lg:px-32 mt-10 sm:mt-16 text-center">
         <AnimatedText
           text="My Projects"
-          className="font-bold self-center text-4xl sm:text-6xl md:text-8xl"
+          className="font-bold self-center text-3xl sm:text-5xl md:text-6xl"
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-12 w-full gap-6 md:gap-16 px-4 sm:px-10 md:px-20 lg:px-32 mb-10 md:mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-12 w-full gap-6 md:gap-12 px-4 sm:px-10 md:px-20 lg:px-32 mb-10 sm:mb-16">
         <div className="col-span-12">
           <FeaturedProject
             title="Portfolio Volume 1"

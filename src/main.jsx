@@ -7,6 +7,7 @@ import Home from "./pages/Home.jsx";
 import Layout from "./Layout.jsx";
 import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
+import { ThemeProvider } from "./context/ThemeContext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,5 +27,8 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <ThemeProvider>
+    <RouterProvider router={router} />
+  </ThemeProvider>
+  
 );

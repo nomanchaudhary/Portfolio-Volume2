@@ -7,7 +7,7 @@ const CircleIcon = ({ reference }) => {
 
   });
   return (
-    <figure className="absolute left-0 stroke-black">
+    <figure className="absolute left-0 stroke-black dark:stroke-orange-500">
       <svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
         <circle
           cx="50"

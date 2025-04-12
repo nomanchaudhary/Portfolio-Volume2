@@ -1,5 +1,5 @@
 import React from "react";
-import { animate, delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const heading = {
   initial: { opacity: 0 },
@@ -27,7 +27,7 @@ function AnimatedText({ text, className = "" }) {
   return (
     <div className="w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden">
       <motion.h1
-        className={`text-6xl font-montserrat inline-block w-full capitalize ${className}`}
+        className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-montserrat inline-block w-full capitalize text-black dark:text-white ${className}`}
         variants={heading}
         initial="initial"
         animate="animate"
