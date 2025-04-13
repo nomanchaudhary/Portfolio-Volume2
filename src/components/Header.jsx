@@ -21,11 +21,11 @@ function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="w-full px-6 md:px-32 py-6 flex items-center justify-between dark:bg-black dark:text-white relative z-50">
+    <header className="w-full px-6 sm:px-10 md:px-10 lg:px-32 py-6 flex items-center justify-between dark:bg-black dark:text-white relative">
       <div className="md:hidden">
     { isOpen ? <IoMdClose size={28} onClick={toggleMenu}/> : <IoMdMenu size={28} onClick={toggleMenu} className="cursor-pointer" />}
       </div>
-      <div className="absolute left-1/2 top-6 transform -translate-x-1/2">
+      <div className="absolute left-[50%] top-5">
         <Logo />
       </div>
       <div className="hidden md:flex w-full justify-between items-center">
@@ -51,10 +51,8 @@ function Header() {
           <DarkModeToggler />
         </div>
       </div>
-
-      {/* Mobile Nav */}
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-white dark:bg-black flex flex-col items-center gap-4 py-6 mt-4 shadow-lg md:hidden z-40">
+        <div className="min-w-[80vw] sm:min-w-[90vw] flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-20 bg-black text-white  dark:bg-white/75 dark:text-black rounded-lg z-50 backdrop-blur-md">
           <nav className="flex flex-col items-center gap-4 font-medium font-montserrat">
             <Link to="/" onClick={toggleMenu}>Home</Link>
             <Link to="/about" onClick={toggleMenu}>About</Link>

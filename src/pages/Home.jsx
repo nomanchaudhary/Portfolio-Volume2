@@ -25,40 +25,46 @@ function Home() {
 
   return (
     <Fragment>
-      <main className="w-full flex items-center min-h-screen px-32 dark:bg-black dark:text-white">
-        <div className="w-full flex items-center justify-between gap-x-10">
-          <div className="w-1/2 py-10">
+      <main className="w-full flex items-center min-h-screen px-6 sm:px-10 md:px-16 lg:px-32 dark:bg-black dark:text-white">
+        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
+          {/* Profile Picture */}
+          <div className="w-full mt-10 sm:w-10/12 md:w-full lg-w-full flex justify-center items-center md:justify-center lg:justify-center">
             <motion.img
               src={profilePic}
               alt="Profile picture of Noman Chaudhary"
-              className="w-full h-auto"
+              className="w-4/5 sm:w-3/5 md:w-full h-auto"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5 }}
             />
           </div>
-          <div className="w-1/2 flex flex-col sm:mx-auto items-center justify-center self-center font-montserrat">
+
+          {/* Text Section */}
+          <div className="w-full flex flex-col items-center md:items-start lg:items-start md:py-20 lg:py-20 justify-center font-montserrat">
             <AnimatedText
               text="Turning vision into reality with code and design."
-              className="font-bold text-left"
+              className="font-bold text-4xl font-montserrat text-center md:text-left sm:text-4xl md:text-6xl"
             />
-            <p className="py-4 text-base cursor-pointer font-medium font-montserrat">
+            <p className="py-4 text-xl text-center md:text-left font-medium">
               As a skilled full-stack developer, I am dedicated to turning ideas
               into innovative web applications. Explore my latest projects and
               articles, showcasing my expertise in React.js and web development.
             </p>
-            <div className="flex items-center mt-4 self-start">
+
+            {/* Buttons */}
+            <div className="flex sm:flex-row md:flex-row lg:flex-row items-center md:items-start lg:items-start gap-3 mt-4 mb-5">
               <motion.button
                 onClick={handleDownload}
-                className="flex items-center text-md font-semibold p-2.5 px-3 bg-black text-white rounded-lg border-2 border-black border-solid cursor-pointer font-montserrat dark:bg-white dark:text-black"
+                className="flex items-center justify-center text-md font-semibold py-3 px-4 bg-black text-white rounded-lg border-2 border-black dark:bg-white dark:text-black w-42 md:w-48 lg:w-48 cursor-pointer"
                 whileHover={{ backgroundColor: "#FFFFFF", color: "#000" }}
               >
                 Download CV
-                <FaArrowUpRightFromSquare className={"w-6 ml-1"} />
+                <FaArrowUpRightFromSquare className="ml-2" />
               </motion.button>
+
               <motion.button
                 onClick={scrollToContact}
-                className="flex items-center text-md font-semibold font-montserrat p-2.5 px-3 bg-black text-white rounded-lg border-2 border-black border-solid cursor-pointer ml-2 dark:bg-white dark:text-black"
+                className="flex items-center justify-center text-md font-semibold py-3 px-4 bg-black text-white rounded-lg border-2 border-black dark:bg-white dark:text-black w-42 md:w-48 lg:w-48 cursor-pointer"
                 whileHover={{ backgroundColor: "#FFFFFF", color: "#000" }}
               >
                 Contact Me
