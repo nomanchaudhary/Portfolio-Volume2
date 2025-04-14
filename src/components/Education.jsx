@@ -37,7 +37,7 @@ function Education() {
   });
   return (
     <div className="my-10">
-      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold w-full text-center font-montserrat text-black dark:text-white">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold w-full text-center font-montserrat text-black dark:text-white">
         Education
       </h2>
       <div ref={ref} className="w-11/12 sm:w-10/12 md:w-8/12 my-15 mx-auto relative -z-50 dark:z-0">

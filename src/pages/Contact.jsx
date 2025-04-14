@@ -34,7 +34,7 @@ function Contact() {
   <section id="contact">
       <div className="w-full h-auto py-12 px-4 sm:px-6 md:px-10 lg:px-20 dark:bg-black dark:text-white">
       <AnimatedText
-        className="text-3xl sm:text-4xl md:text-5xl font-bold font-montserrat text-center"
+        className="text-3xl sm:text-4xl md:text-6xl lg:text-6xl font-bold font-montserrat text-center"
         text="Have a Project in Mind? Let’s Talk 😍"
       />
 

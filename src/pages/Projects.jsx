@@ -93,7 +93,7 @@ function Projects() {
       <div className="px-4 sm:px-10 md:px-20 lg:px-32 mt-10 sm:mt-16 text-center">
         <AnimatedText
           text="What I’ve Built So Far."
-          className="font-bold self-center text-3xl sm:text-5xl md:text-6xl"
+          className="font-bold self-center text-3xl sm:text-5xl md:text-6xl lg:text-6xl"
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 w-full gap-6 md:gap-12 px-6 sm:px-10 md:px-20 lg:px-32 mb-10 sm:mb-16">

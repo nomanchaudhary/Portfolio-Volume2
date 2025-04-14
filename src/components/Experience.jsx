@@ -46,7 +46,7 @@ function Experience() {
 
   return (
     <div className="my-20">
-      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold w-full text-center font-montserrat text-black dark:text-white">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold w-full text-center font-montserrat text-black dark:text-white">
         Experience
       </h2>
       <div
