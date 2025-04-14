@@ -32,7 +32,7 @@ function Home() {
             <motion.img
               src={profilePic}
               alt="Profile picture of Noman Chaudhary"
-              className="w-4/5 sm:w-3/5 md:w-full h-auto"
+              className="w-4/5 sm:w-3/4 md:w-full h-auto"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5 }}
@@ -43,7 +43,7 @@ function Home() {
           <div className="w-full flex flex-col items-center md:items-start lg:items-start md:py-20 lg:py-20 justify-center font-montserrat">
             <AnimatedText
               text="Turning vision into reality with code and design."
-              className="font-bold text-4xl font-montserrat text-center md:text-left sm:text-4xl md:text-6xl"
+              className="font-bold text-4xl font-montserrat text-center md:text-left sm:text-4xl md:text-6xl lg:text-6xl"
             />
             <p className="py-4 text-xl text-center md:text-left font-medium">
               As a skilled full-stack developer, I am dedicated to turning ideas

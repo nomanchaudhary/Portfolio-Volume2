@@ -29,7 +29,7 @@ const FeaturedProject = ({ type, img, title, summary, link, github }) => {
         <p className="my-2 font-medium text-black text-sm sm:text-base dark:text-white">
           {summary}
         </p>
-        <div className="w-full flex items-center mt-4">
+        <div className="w-full flex justify-between items-center mt-4 sm:w-full sm:flex sm:items-center sm:mt-4 md:w-full md:flex md:items-center md:justify-normal md:mt-4 lg:w-full lg:flex lg:items-center lg:justify-normal lg:mt-4">
           <Link to={github} target="_blank">
             <FaGithub size={50}/>
           </Link>
@@ -96,7 +96,7 @@ function Projects() {
           className="font-bold self-center text-3xl sm:text-5xl md:text-6xl"
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-12 w-full gap-6 md:gap-12 px-4 sm:px-10 md:px-20 lg:px-32 mb-10 sm:mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-12 w-full gap-6 md:gap-12 px-6 sm:px-10 md:px-20 lg:px-32 mb-10 sm:mb-16">
         <div className="col-span-12">
           <FeaturedProject
             title="Portfolio Volume 1"

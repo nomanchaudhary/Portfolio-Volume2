@@ -7,7 +7,7 @@ const Details = ({ type, time, institute, coursework }) => {
   return (
     <li
       ref={ref}
-      className="my-10 w-full sm:w-10/12 md:w-8/12 mx-auto flex flex-col justify-between items-center dark:text-white"
+      className="my-8 w-[85%] mx-auto flex flex-col items-start justify-between md:w-[80%]"
     >
       <CircleIcon reference={ref} />
       <motion.div
@@ -15,13 +15,13 @@ const Details = ({ type, time, institute, coursework }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h3 className="capitalize text-xl sm:text-2xl md:text-3xl font-bold font-montserrat text-black dark:text-white text-center sm:text-left">
+        <h3 className="capitalize text-xl sm:text-2xl md:text-3xl font-bold font-montserrat text-black dark:text-white text-left">
           {type}&nbsp;
         </h3>
         <span className="capitalize font-medium font-montserrat text-black/75 dark:text-white/75 block text-center sm:text-left">
           {time} || {institute}
         </span>
-        <p className="font-medium w-full text-black dark:text-white text-sm sm:text-base mt-2 text-center sm:text-left">
+        <p className="font-medium w-full text-black dark:text-white text-lg mt-2 text-left">
           {coursework}
         </p>
       </motion.div>
@@ -43,7 +43,7 @@ function Education() {
       <div ref={ref} className="w-11/12 sm:w-10/12 md:w-8/12 my-15 mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-4 sm:left-9 top-0 w-[3px] sm:w-[4px] bg-black dark:bg-orange-500 h-full"
+          className="absolute left-6 sm:left-6 md:left-7 lg:left-9 top-0 w-[3px] sm:w-[4px] bg-black dark:bg-orange-500 h-full"
         ></motion.div>
         <ul className="w-full flex flex-col justify-between items-start ml-5">
           <Details

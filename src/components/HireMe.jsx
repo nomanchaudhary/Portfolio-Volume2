@@ -8,9 +8,9 @@ function HireMe() {
   return (
     <div
       className="
-      absolute
+      absolute md:fixed lg:fixed
         top-0 right-2
-        md:top-auto md:bottom-8 md:left-8 md:right-auto
+        md:top-auto md:bottom-5 md:left-5 md:right-auto
         flex items-center justify-center
       "
     >
@@ -51,7 +51,7 @@ function HireMe() {
           target="_blank"
           className="
             flex items-center justify-center 
-            absolute 
+            absolute
             text-base md:text-lg 
             bg-black text-white 
             rounded-full 

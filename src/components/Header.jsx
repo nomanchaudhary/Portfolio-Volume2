@@ -52,7 +52,7 @@ function Header() {
         </div>
       </div>
       {isOpen && (
-        <div className="min-w-[80vw] sm:min-w-[90vw] flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-20 bg-black text-white  dark:bg-white/75 dark:text-black rounded-lg z-50 backdrop-blur-md">
+        <div className="min-w-[80vw] sm:min-w-[90vw] -mt-16 flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 py-20 bg-black text-white  dark:bg-white/75 dark:text-black rounded-lg z-50 backdrop-blur-md">
           <nav className="flex flex-col items-center gap-4 font-medium font-montserrat">
             <Link to="/" onClick={toggleMenu}>Home</Link>
             <Link to="/about" onClick={toggleMenu}>About</Link>
@@ -60,7 +60,7 @@ function Header() {
             <Link to="/contact" onClick={toggleMenu}>Contact</Link>
           </nav>
 
-          <div className="flex gap-x-6 mt-4">
+          <div className="flex gap-x-6 items-center mt-4 ">
             {socialLinks.map(({ icon: Icon, link }, index) => (
               <motion.a
                 key={index}

@@ -21,22 +21,22 @@ function Skills() {
   ];
   return (
     <>
-      <h2 className="text-6xl sm:text-8xl font-bold font-montserrat mt-30 w-full text-center text-black dark:text-white">
+      <h2 className="text-4xl sm:text-6xl md:text-6xl lg:text-8xl font-bold font-montserrat mt-15 sm:mt-20 md:mt-30 lg:mt-30 w-full text-center text-black dark:text-white">
         My <span className="text-orange-400">Skills</span>
       </h2>
-      <h2 className="text-2xl sm:text-3xl font-bold font-montserrat mt-10 text-black dark:text-white">
-        Frontend Technologies && Tools
+      <h2 className="text-2xl text-center sm:text-3xl md:text-3xl lg:text-3xl font-bold font-montserrat mt-10 text-black dark:text-white">
+        Frontend Technologies & Tools
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 m-10">
+      <div className="grid grid-cols-2 gap-y-3 gap-x-3 mt-10 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 sm:grid-cols-2 gap-2 md:gap-6">
         {Skills.map(({ img, title }, index) => (
           <div
             key={index}
-            className="flex justify-center items-center p-2 gap-2 border-2 border-black dark:border-white rounded-2xl"
+            className="flex justify-center items-center text-center p-2 gap-2 border-2 border-black dark:border-white rounded-2xl "
           >
             <div className="text-lg sm:text-xl font-montserrat font-semibold text-black dark:text-white">
               {title}
             </div>
-            <img src={img} alt={title} className="w-16 h-16 sm:w-20 sm:h-20 rounded-full" />
+            <img src={img} alt={title} className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full" />
           </div>
         ))}
       </div>
