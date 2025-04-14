@@ -35,7 +35,7 @@ function Contact() {
       <div className="w-full h-auto py-12 px-4 sm:px-6 md:px-10 lg:px-20 dark:bg-black dark:text-white">
       <AnimatedText
         className="text-3xl sm:text-4xl md:text-5xl font-bold font-montserrat text-center"
-        text="Get In Touch"
+        text="Have a Project in Mind? Let’s Talk 😍"
       />
 
       <form

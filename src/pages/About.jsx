@@ -41,8 +41,8 @@ function About() {
       <main className="flex flex-col justify-center items-center w-full dark:bg-black dark:text-white px-10 sm:px-16 md:px-16 lg:px-32">
         <div className="px-10 py-10 md:py-10 lg:py-10">
           <AnimatedText
-            text="Passion Fuels Purpose!"
-            className="font-bold self-center text-4xl md:text-6xl lg:text-8xl"
+            text="Crafting web experiences with heart, code, and creativity!"
+            className="font-bold self-center text-4xl md:text-6xl lg:text-6xl"
           />
         </div>
         <div className="flex flex-col gap-10 md:grid md:grid-cols-8 md:gap-16 w-full lg:w-full lg:grid lg:grid-cols-8 lg:gap-16">

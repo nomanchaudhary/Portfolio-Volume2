@@ -40,9 +40,9 @@ function Home() {
           </div>
 
           {/* Text Section */}
-          <div className="w-full flex flex-col items-center md:items-start lg:items-start md:py-10 lg:py-10 justify-center font-montserrat">
+          <div className="w-full flex flex-col items-center md:items-start lg:items-start md:py-15 lg:py-20 justify-center font-montserrat">
             <AnimatedText
-              text="Turning vision into reality with code and design."
+              text="Bringing ideas to life with elegant code and thoughtful design."
               className="font-bold text-4xl font-montserrat text-center md:text-left sm:text-4xl md:text-6xl lg:text-6xl"
             />
             <p className="py-4 text-xl text-center md:text-left font-medium">

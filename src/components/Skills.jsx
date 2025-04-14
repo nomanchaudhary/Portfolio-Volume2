@@ -21,8 +21,8 @@ function Skills() {
   ];
   return (
     <>
-      <h2 className="text-4xl sm:text-6xl md:text-6xl lg:text-8xl font-bold font-montserrat mt-15 sm:mt-20 md:mt-30 lg:mt-30 w-full text-center text-black dark:text-white">
-        My <span className="text-orange-400">Skills</span>
+      <h2 className="text-4xl sm:text-6xl md:text-6xl lg:text-6xl font-bold font-montserrat mt-15 sm:mt-20 md:mt-30 lg:mt-30 w-full text-center text-black dark:text-white">
+        My <span className="text-orange-400">Toolkit 🛠️</span>
       </h2>
       <h2 className="text-2xl text-center sm:text-3xl md:text-3xl lg:text-3xl font-bold font-montserrat mt-10 text-black dark:text-white">
         Frontend Technologies & Tools

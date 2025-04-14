@@ -92,7 +92,7 @@ function Projects() {
      <main className="w-full flex flex-col justify-center items-center dark:bg-black dark:text-white">
       <div className="px-4 sm:px-10 md:px-20 lg:px-32 mt-10 sm:mt-16 text-center">
         <AnimatedText
-          text="My Projects"
+          text="What I’ve Built So Far."
           className="font-bold self-center text-3xl sm:text-5xl md:text-6xl"
         />
       </div>
