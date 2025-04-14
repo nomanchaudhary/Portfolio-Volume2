@@ -5,3 +5,7 @@
 @theme{
     --font-montserrat: "Montserrat", sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}

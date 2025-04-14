@@ -24,11 +24,11 @@ function Home() {
   };
 
   return (
-    <Fragment>
-      <main className="w-full flex items-center min-h-screen px-6 sm:px-10 md:px-16 lg:px-32 dark:bg-black dark:text-white">
+    <section id="home">
+      <main className="w-full flex items-center min-h-screen px-6 sm:px-10 md:px-16 md:py-10 lg:py-10 lg:px-32 dark:bg-black dark:text-white">
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
           {/* Profile Picture */}
-          <div className="w-full mt-10 sm:w-10/12 md:w-full lg-w-full flex justify-center items-center md:justify-center lg:justify-center">
+          <div className="w-full sm:w-10/12 md:w-full lg-w-full flex justify-center items-center md:justify-center lg:justify-center py-15">
             <motion.img
               src={profilePic}
               alt="Profile picture of Noman Chaudhary"
@@ -40,15 +40,19 @@ function Home() {
           </div>
 
           {/* Text Section */}
-          <div className="w-full flex flex-col items-center md:items-start lg:items-start md:py-20 lg:py-20 justify-center font-montserrat">
+          <div className="w-full flex flex-col items-center md:items-start lg:items-start md:py-10 lg:py-10 justify-center font-montserrat">
             <AnimatedText
               text="Turning vision into reality with code and design."
               className="font-bold text-4xl font-montserrat text-center md:text-left sm:text-4xl md:text-6xl lg:text-6xl"
             />
             <p className="py-4 text-xl text-center md:text-left font-medium">
-              As a skilled full-stack developer, I am dedicated to turning ideas
-              into innovative web applications. Explore my latest projects and
-              articles, showcasing my expertise in React.js and web development.
+              As a passionate full-stack developer, I'm dedicated to
+              transforming ideas into modern, responsive, and innovative web
+              applications. With a strong focus on React.js, JavaScript, and the
+              MERN stack, I continuously strive to create seamless user
+              experiences and clean, efficient code. Explore my latest projects
+              and writings to see how I bring design, functionality, and
+              creativity together in every line of code.
             </p>
 
             {/* Buttons */}
@@ -74,7 +78,7 @@ function Home() {
         </div>
         <HireMe />
       </main>
-    </Fragment>
+    </section>
   );
 }
 

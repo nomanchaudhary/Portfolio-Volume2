@@ -45,16 +45,19 @@ function Experience() {
   });
 
   return (
-    <div className="my-10">
+    <div className="my-20">
       <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold w-full text-center font-montserrat text-black dark:text-white">
         Experience
       </h2>
-      <div ref={ref} className="w-11/12 sm:w-10/12 md:w-8/12 my-15 mx-auto relative">
+      <div
+        ref={ref}
+        className="w-11/12 sm:w-10/12 md:w-8/12 my-15 mx-auto relative -z-50 dark:z-0"
+      >
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-6 sm:left-6 md:left-7 lg:left-9 top-0 w-[3px] sm:w-[4px] bg-black dark:bg-orange-500 h-full"
+          className="absolute left-6 sm:left-6 md:left-7 lg:left-9 top-0 w-[3px] sm:w-[4px] bg-black dark:bg-orange-500 h-full z-0"
         ></motion.div>
-        <ul className="w-full flex flex-col justify-between items-start ml-5">
+        <ul className="w-full flex flex-col justify-between items-start ml-5 dark:bg-black dark:text-white">
           <Details
             position="Junior Frontend Developer"
             company="CodeLab IT Solutions"

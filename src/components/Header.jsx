@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa6";
 import { IoMdMenu } from "react-icons/io";
 import Logo from "./Logo";
@@ -17,23 +16,49 @@ const socialLinks = [
 ];
 
 function Header() {
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = () => {
+    if (window.scrollY > lastScrollY) {
+      setShowNavbar(false);
+    } else {
+      setShowNavbar(true);
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="w-full px-6 sm:px-10 md:px-10 lg:px-32 py-6 flex items-center justify-between dark:bg-black dark:text-white relative">
-      <div className="md:hidden">
-    { isOpen ? <IoMdClose size={28} onClick={toggleMenu}/> : <IoMdMenu size={28} onClick={toggleMenu} className="cursor-pointer" />}
+    <header
+    className={`w-full top-0 left-0 px-6 sm:px-10 md:px-10 lg:px-32 py-6 flex items-center transition-transform duration-300 ${
+      showNavbar ? "md:translate-y-0 lg:translate-y-0" : "md:-translate-y-full lg:-translate-y-full"
+    } bg-white justify-between dark:bg-black dark:text-white md:fixed lg:fixed`}
+    
+    >
+      <div className="md:hidden fixed z-50 mt-5">
+        {isOpen ? (
+          <IoMdClose size={28} onClick={toggleMenu} />
+        ) : (
+          <IoMdMenu size={28} onClick={toggleMenu} className="cursor-pointer" />
+        )}
       </div>
-      <div className="absolute left-[50%] top-5">
+      <div className="absolute left-[45%] md:left-[50%] lg:left-[50%] top-6 lg:top-4 items-center justify-center">
         <Logo />
       </div>
       <div className="hidden md:flex w-full justify-between items-center">
         <nav className="flex gap-x-8 font-medium font-montserrat">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact</Link>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </nav>
 
         <div className="flex gap-x-6 items-center">
@@ -54,10 +79,18 @@ function Header() {
       {isOpen && (
         <div className="min-w-[80vw] sm:min-w-[90vw] -mt-16 flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 py-20 bg-black text-white  dark:bg-white/75 dark:text-black rounded-lg z-50 backdrop-blur-md">
           <nav className="flex flex-col items-center gap-4 font-medium font-montserrat">
-            <Link to="/" onClick={toggleMenu}>Home</Link>
-            <Link to="/about" onClick={toggleMenu}>About</Link>
-            <Link to="/projects" onClick={toggleMenu}>Projects</Link>
-            <Link to="/contact" onClick={toggleMenu}>Contact</Link>
+            <a href="/" onClick={toggleMenu}>
+              Home
+            </a>
+            <a href="#about" onClick={toggleMenu}>
+              About
+            </a>
+            <a href="#projects" onClick={toggleMenu}>
+              Projects
+            </a>
+            <a href="#contact" onClick={toggleMenu}>
+              Contact
+            </a>
           </nav>
 
           <div className="flex gap-x-6 items-center mt-4 ">

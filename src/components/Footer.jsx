@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 
 function Footer() {
   return (
@@ -10,21 +10,21 @@ function Footer() {
         </span>
         <div className="flex items-center text-base sm:text-lg font-montserrat text-black dark:text-white mt-4 sm:mt-0">
           Built By&nbsp; <span className="text-xl sm:text-2xl">&hearts;</span>&nbsp;
-          <Link
+          <a
             className="underline underline-offset-2 cursor-pointer text-black dark:text-white"
             target="_blank"
-            to="https://www.linkedin.com/in/nomanchaudhary00/"
+            href="https://www.linkedin.com/in/nomanchaudhary00/"
           >
             Muhammad Noman
-          </Link>
+          </a>
         </div>
-        <Link
+        <a
           className="underline underline-offset-2 text-base sm:text-lg cursor-pointer font-montserrat text-black dark:text-white mt-4 sm:mt-0"
           target="_blank"
-          to="https://www.linkedin.com/in/nomanchaudhary00/"
+          href="https://www.linkedin.com/in/nomanchaudhary00/"
         >
           Say Hello 👋
-        </Link>
+        </a>
       </div>
     </footer>
   );

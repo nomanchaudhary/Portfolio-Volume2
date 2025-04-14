@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function HireMe() {
-  const MotionLink = motion(Link);
+  const MotionAnchor = motion.a;
 
   return (
     <div
@@ -11,7 +10,7 @@ function HireMe() {
       absolute md:fixed lg:fixed
         top-0 right-2
         md:top-auto md:bottom-5 md:left-5 md:right-auto
-        flex items-center justify-center
+        flex items-center justify-center z-50
       "
     >
       <div
@@ -46,8 +45,8 @@ function HireMe() {
           />
         </motion.svg>
 
-        <MotionLink
-          to="https://www.linkedin.com/in/nomanchaudhary00/"
+        <MotionAnchor
+          href="https://www.linkedin.com/in/nomanchaudhary00/"
           target="_blank"
           className="
             flex items-center justify-center 
@@ -64,7 +63,7 @@ function HireMe() {
           whileHover={{ backgroundColor: "#FFFFFF", color: "#000" }}
         >
           Hire Me
-        </MotionLink>
+        </MotionAnchor>
       </div>
     </div>
   );

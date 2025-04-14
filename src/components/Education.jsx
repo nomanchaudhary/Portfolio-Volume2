@@ -18,7 +18,7 @@ const Details = ({ type, time, institute, coursework }) => {
         <h3 className="capitalize text-xl sm:text-2xl md:text-3xl font-bold font-montserrat text-black dark:text-white text-left">
           {type}&nbsp;
         </h3>
-        <span className="capitalize font-medium font-montserrat text-black/75 dark:text-white/75 block text-center sm:text-left">
+        <span className="capitalize font-medium font-montserrat text-black/75 dark:text-white/75 block text-start sm:text-left">
           {time} || {institute}
         </span>
         <p className="font-medium w-full text-black dark:text-white text-lg mt-2 text-left">
@@ -40,7 +40,7 @@ function Education() {
       <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold w-full text-center font-montserrat text-black dark:text-white">
         Education
       </h2>
-      <div ref={ref} className="w-11/12 sm:w-10/12 md:w-8/12 my-15 mx-auto relative">
+      <div ref={ref} className="w-11/12 sm:w-10/12 md:w-8/12 my-15 mx-auto relative -z-50 dark:z-0">
         <motion.div
           style={{ scaleY: scrollYProgress }}
           className="absolute left-6 sm:left-6 md:left-7 lg:left-9 top-0 w-[3px] sm:w-[4px] bg-black dark:bg-orange-500 h-full"
