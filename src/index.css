@@ -6,6 +6,12 @@
     --font-montserrat: "Montserrat", sans-serif;
 }
 
-html{
+*{
+    box-sizing: border-box;
+}
+
+html,body{
     scroll-behavior: smooth;
+    max-width:100%;
+    overflow-x: hidden;
 }
