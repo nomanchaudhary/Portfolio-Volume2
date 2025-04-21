@@ -44,9 +44,9 @@ function Header() {
     >
       <div className="md:hidden fixed z-50 mt-5">
         {isOpen ? (
-          <IoMdClose size={28} onClick={toggleMenu} />
+          <IoMdClose size={28} onClick={toggleMenu}  className="cursor-pointer bg-white dark:bg-black" />
         ) : (
-          <IoMdMenu size={28} onClick={toggleMenu} className="cursor-pointer" />
+          <IoMdMenu size={28} onClick={toggleMenu} className="cursor-pointer bg-white dark:bg-black" />
         )}
       </div>
       <div className="absolute left-[45%] md:left-[50%] lg:left-[50%] top-6 lg:top-4 items-center justify-center">
