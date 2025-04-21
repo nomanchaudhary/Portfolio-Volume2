@@ -80,30 +80,22 @@ function About() {
 
           <div
             className="col-span-2 order-3 md:order-none lg:order-none sm:col-span-8 md:col-span-8 lg:col-span-2 flex flex-row items-center gap-5 justify-center 
-        sm:flex-row sm:items-center sm:justify-center md:flex-row md:justify-center md:items-center lg:flex-col lg:justify-between lg:items-end md:w-full"
+        sm:flex-row sm:items-center sm:justify-center md:flex-row md:justify-center md:items-center lg:flex-col lg:justify-center lg:items-end md:w-full"
           >
             <div className="flex flex-col items-center text-center lg:items-end justify-center md:flex-col md:items-center md:justify-center md:w-full">
               <span className="text-3xl md:text-6xl lg:text-6xl font-bold font-montserrat inline-block">
-                <AnimatedNumbers value={40} />+
+                <AnimatedNumbers value={5} />
               </span>
               <h1 className="text-lg font-medium font-montserrat">
-                Satisfied Clients
-              </h1>
-            </div>
-            <div className="flex flex-col items-center text-center lg:items-end justify-center md:flex-col md:items-center md:justify-center md:w-full">
-              <span className="text-3xl md:text-6xl lg:text-6xl font-bold font-montserrat inline-block">
-                <AnimatedNumbers value={50} />+
-              </span>
-              <h1 className="text-lg font-medium font-montserrat">
-                Projects Completed
+                Projects During Learning
               </h1>
             </div>
             <div className="flex flex-col items-center text-center lg:items-end justify-center md:flex-col md:items-center md:justify-center md-w-full">
               <span className="text-3xl md:text-6xl lg:text-6xl font-bold font-montserrat inline-block">
-                <AnimatedNumbers value={1} />+
+                <AnimatedNumbers value={6} />
               </span>
               <h1 className="text-lg font-medium font-montserrat">
-                Years Experience
+                Months Experience
               </h1>
             </div>
           </div>

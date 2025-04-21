@@ -12,7 +12,6 @@ const socialLinks = [
     icon: FaLinkedin,
     link: "https://www.linkedin.com/in/nomanchaudhary00/",
   },
-  { icon: FaInstagram, link: "https://instagram.com/nomanchaudhary00" },
 ];
 
 function Header() {
