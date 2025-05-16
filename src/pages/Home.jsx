@@ -46,7 +46,7 @@ function Home() {
               className="font-bold text-4xl font-montserrat text-center md:text-left sm:text-4xl md:text-6xl lg:text-6xl"
             />
             <p className="py-4 text-xl text-center md:text-left font-medium">
-            As a passionate full-stack developer, I'm dedicated to transforming ideas into modern, responsive, and innovative web applications. With a strong focus on React.js, JavaScript, and .NET backend development, I continuously strive to create seamless user experiences and clean, efficient code. Explore my latest projects and writings to see how I bring design, functionality, and creativity together in every line of code.
+            As a passionate <b>Frontend Developer</b>, I'm dedicated to transforming ideas into modern, responsive, and innovative web applications. With a strong focus on React.js, JavaScript, I continuously strive to create seamless user experiences and clean, efficient code. Explore my latest projects and writings to see how I bring design, functionality, and creativity together in every line of code.
             </p>
 
             {/* Buttons */}
